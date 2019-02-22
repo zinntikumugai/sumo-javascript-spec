@@ -19,6 +19,9 @@ withGzipCompression = "1";
 
 var pako = require('pako');
 var punycode = require('punycode');
+var textEncoding = require('text-encoding');
+var TextEncoder = textEncoding.TextEncoder;
+var TextDecoder = textEncoding.TextDecoder;
 
 function toPuny (s) {
   output = punycode.encode(s);
